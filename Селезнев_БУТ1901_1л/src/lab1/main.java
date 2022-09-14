@@ -1,8 +1,9 @@
 package lab1;
+
 import java.util.Scanner;
 import java.util.Arrays;
 
-class lab1 {
+class l1 {
     public static void main(String[] arg) {
         task1();
         task2();
