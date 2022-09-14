@@ -103,12 +103,7 @@ class lab1 {
     }
 
     public static void task7() {
-        //Москва - 905
-        //Ростов - 194
-        //Краснодар - 491
-        //Киров - 800
-        //boolean flag = true;
-        //while (flag == true) {
+
         System.out.println("№ 7");
         Scanner sc = new Scanner(System.in);
         System.out.print("Введите код интересующего Вас города: ");
@@ -130,7 +125,6 @@ class lab1 {
         }
     }
 
-    //}
     public static void task8() {
         System.out.println("№ 8");
         int[] Array = {1, -10, 5, 6, 45, 23, 45, -34, 0, 32, 56, -1, 2, -2};
