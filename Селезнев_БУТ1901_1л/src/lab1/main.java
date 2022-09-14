@@ -113,13 +113,13 @@ class lab1 {
         double Krasnodar = 2.69;
         double Kirov = 5.00;
         if (x == 905) {
-            System.out.println("Москва. Стоимость разговора: " + Moscow * 10);
+            System.out.println("Москва. стоимость : " + Moscow * 10);
         } else if (x == 194) {
-            System.out.println("Ростов. Стоимость разговора: " + Rostov * 10);
+            System.out.println("Ростов. стоимость : " + Rostov * 10);
         } else if (x == 491) {
-            System.out.println("Краснодар. Стоимость разговора: " + Krasnodar * 10);
+            System.out.println("Краснодар. стоимость : " + Krasnodar * 10);
         } else if (x == 800) {
-            System.out.println("Краснодар. Стоимость разговора: " + Krasnodar * 10);
+            System.out.println("Краснодар. стоимость : " + Krasnodar * 10);
         } else {
             System.out.println("некорректно введенный код");
         }
