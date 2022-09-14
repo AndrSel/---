@@ -152,7 +152,7 @@ class l1 {
                 k1 += 1;
             }
         }
-        System.out.println("Кол-во положительных эл-тов: " + k1);
+        System.out.println("Кол-во положительных элементов: " + k1);
         double sum3 = 0;
         int k2 = 0;
         for (int i = 0; i < Array.length; i++) {
@@ -162,7 +162,7 @@ class l1 {
             }
         }
         double avg = sum3 / k2;
-        System.out.println("Среднеарифметическое отрицательных эл-тов: " + avg);
+        System.out.println("Среднеарифметическое отрицательных элементов: " + avg);
     }
 
     public static void task9() {
