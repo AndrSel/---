@@ -25,8 +25,6 @@ class l1 {
     }
 
     public static void task2() {
-        boolean flag = true;
-
         System.out.println("№2");
         Scanner in = new Scanner(System.in);
         String a = in.nextLine();
@@ -56,6 +54,7 @@ class l1 {
             System.out.println("число отрицательное: " + x);
         }
     }
+
 
     public static void task4() {
         System.out.println("№ 4");
@@ -98,7 +97,7 @@ class l1 {
         } else if ((x > 0) && (x % 2 == 0)) {
             System.out.println("положительное четное число");
         } else if (x == 0) {
-            System.out.println("ноль");
+            System.out.println("нулевое число");
         }
 
     }
@@ -107,7 +106,7 @@ class l1 {
 
         System.out.println("№ 7");
         Scanner sc = new Scanner(System.in);
-        System.out.print("Введите код интересующего Вас города: ");
+        System.out.print("Введите код города: ");
         int x = sc.nextInt();
         double Moscow = 4.15;
         double Rostov = 1.98;
