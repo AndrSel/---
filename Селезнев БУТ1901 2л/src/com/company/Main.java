@@ -5,31 +5,24 @@ import java.util.List;
 
 public class Main {
 
-    private static final List<Student> studentList = new ArrayList<>();//Создание массива
-    //1
-    static {
-        studentList.add(new Student(3.5));
-        studentList.add(new Student(3));
-        studentList.add(new Student(3.5));
-        studentList.add(new Student(4));
-        studentList.add(new Aspirant(4.5));
-        studentList.add(new Student(4.4));
-        studentList.add(new Aspirant(5));
-        studentList.add(new Aspirant(5));
-        studentList.add(new Student(4.1));
-    }
-    //2
-    public static List<Animal> animals = new ArrayList<>();
 
-    static {
-        animals.add(new Cat("food1", "1"));
-        animals.add(new Dog("food2", "2"));
-        animals.add(new Horse("food3", "3"));
-    }
 
 
     public static void main(String[] args) {
+
+        List<Student> studentList = new ArrayList<>();//Создание массива
         //1
+
+            studentList.add(new Student(3.5));
+            studentList.add(new Student(3));
+            studentList.add(new Student(3.5));
+            studentList.add(new Student(4));
+            studentList.add(new Aspirant(4.5));
+            studentList.add(new Student(4.4));
+            studentList.add(new Aspirant(5));
+            studentList.add(new Aspirant(5));
+            studentList.add(new Student(4.1));
+
         for (Student student : studentList) {
             System.out.println(" " + student.getScholarship());
         }
@@ -37,11 +30,20 @@ public class Main {
         System.out.println("--------------");
 
         //2
+
+        List<Animal> animals = new ArrayList<>();
+
+
+        animals.add(new Cat("food1", "1"));
+        animals.add(new Dog("food2", "2"));
+        animals.add(new Horse("food3", "3"));
         Veterinarian veterinarian = new Veterinarian();
         for (Animal animal : animals) {
             veterinarian.treatAnimal(animal);
         }
+
         System.out.println("--------------");
+
         //3
         Phone phone1 = new Phone("12345678900", "1", 110);
         Phone phone2 = new Phone("01237585983", "2", 120);
