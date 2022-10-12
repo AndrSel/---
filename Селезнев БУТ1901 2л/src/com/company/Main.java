@@ -5,9 +5,6 @@ import java.util.List;
 
 public class Main {
 
-
-
-
     public static void main(String[] args) {
 
         List<Student> studentList = new ArrayList<>();//Создание массива
@@ -21,7 +18,7 @@ public class Main {
             studentList.add(new Student(4.4));
             studentList.add(new Aspirant(5));
             studentList.add(new Aspirant(5));
-            studentList.add(new Student(4.1));
+
 
         for (Student student : studentList) {
             System.out.println(" " + student.getScholarship());
@@ -60,7 +57,8 @@ public class Main {
     }
 }
 
-
+//Аннотация @Override перед объявлением метода означает,
+//что метод переопределяет объявление метода в базовом классе
 
 //1
 class Student {
