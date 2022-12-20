@@ -19,5 +19,29 @@
 <form action="/product/delete/${product.id}" method="post">
     <input type="submit" value="Удалить объявление"/>
 </form>
+
+
+<form action="/product/edit/${product.id}" method="post" enctype="multipart/form-data">
+    <!--<input type="number" name="id"/><br>-->
+
+    <input type="text" name="title"/><br>
+
+    <input type="text" name="description"/><br>
+
+    <input type="number" name="price"/><br>
+
+    <input type="text" name="author"/><br>
+
+    <input type="text" name="city"/><br>
+
+    <input type="file" name="file1"/><br>
+
+    <input type="file" name="file2"/><br>
+
+
+    <input type="submit" value="обновить объявление"/><br>
+</form>
+
+
 </body>
 </html>

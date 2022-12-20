@@ -46,4 +46,12 @@ public class ProductController {
         productService.deleteProduct(id);
         return "redirect:/";
     }
+
+    @PostMapping("/product/edit/{id}")
+    public String editProduct2(@PathVariable Long id, @RequestParam("file1") MultipartFile file1, @RequestParam("file2") MultipartFile file2,
+                              //@RequestParam("file3") MultipartFile file3,
+                              Product product) throws IOException {
+        productService.editProduct2(product, file1, file2, id);
+        return "redirect:/";
+    }
 }

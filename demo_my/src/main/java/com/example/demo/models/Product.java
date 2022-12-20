@@ -31,8 +31,8 @@ public class Product {
     private String author;
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY,
             mappedBy = "product")
-    private List<Image> images = new ArrayList<>();
-    private Long previewImageId;
+    public List<Image> images = new ArrayList<>();
+    public Long previewImageId;
     private LocalDateTime dateOfCreated;
 
     @PrePersist
@@ -45,4 +45,23 @@ public class Product {
         image.setProduct(this);
         images.add(image);
     }
+
+    public void deleteAllImageToProduct() {
+        images.clear();
+    }
+
+    public void deleteImageToProduct(Image image) {
+        image.setProduct(this);
+        images.remove(image);
+    }
+
+    public void AddAllImageToProduct(Image image, Image image2) {
+        image.setProduct(this);
+        image2.setProduct(this);
+
+        images.clear();
+        images.add(image);
+        images.add(image);
+    }
+
 }
